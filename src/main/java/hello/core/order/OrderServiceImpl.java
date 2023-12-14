@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OrderServiceImpl implements OrderService {
-
+    //final을 통해, 생성자를 통해서 또는 아예 초기에 값을 줄 때만 값을 설정할 수 있다.
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
